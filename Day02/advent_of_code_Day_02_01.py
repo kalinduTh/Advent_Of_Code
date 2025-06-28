@@ -12,7 +12,7 @@ def add_to_arr(content):
         row = line.split()
         data_arr.append(row)
     
-    print(data_arr[1])
+    print(data_arr[100])
 
 add_to_arr(content)
 
