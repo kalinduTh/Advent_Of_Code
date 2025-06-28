@@ -1,9 +1,20 @@
-l1 = []
-l2 = []
-l3 = []
-l4 = []
-l5 = []
 
-with open ('input.txt', 'r') as levels:
-    for level in levels:
-        parts = level.split("\n")
+f = open('input.txt', 'r')
+content = f.read()
+f.close()
+
+def add_to_arr(content):
+
+    data_arr = []
+
+    data = content.strip().split("\n")
+    for line in data:
+        row = line.split()
+        data_arr.append(row)
+    
+    print(data_arr[1])
+
+add_to_arr(content)
+
+
+    
